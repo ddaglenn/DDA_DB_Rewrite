@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Local css overrides -->
+    <link rel="stylesheet" href="dda_topnav.css">
+
+    <title>DDA WebBase</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">DDA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">New Job<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reports</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>New Paper Entry Form</h1>
+      <form id="dataEntry">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="county">County</label>
+              <input type="text" class="form-control" id="county" placeholder="Enter County of Court">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="county">State</label>
+              <select class="custom-select">
+                <option>Enter State of Court</option>
+                <option value="IL" selected="selected">IL</option>
+                <!-- Need to populate all states -->
+                <option value="FL">FL</option>
+                <option value="IN">IN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="plaintiff">Plaintiff</label>
+          <input type="text" class="form-control" id="plaintiff" placeholder="Enter Plaintiff">
+        </div>
+        <div class="form-group">
+          <label for="defendant">Defendant</label>
+          <input type="text" class="form-control" id="defendant" placeholder="Enter Defendant">
+        </div>
+        <div class="form-group">
+          <label for="caseNumber">Case Number</label>
+          <input type="text" class="form-control" id="caseNumber" placeholder="Enter Case Number">
+        </div>
+        <div class="form-group">
+          <label for="respondent">Respondent</label>
+          <input type="text" class="form-control" id="respondent" placeholder="Enter Respondent">
+        </div>
+        <div class="form-group">
+          <label for="address1">Address Line 1</label>
+          <input type="text" class="form-control" id="address1" placeholder="Enter Service Address">
+        </div>
+        <div class="form-group">
+          <label for="address2">Address Line 2</label>
+          <input type="text" class="form-control" id="address2" placeholder="Enter Case Number" disabled>
+        </div>
+        <div class="form-group">
+          <label for="respondent">Respondent</label>
+          <input type="text" class="form-control" id="respondent" placeholder="Enter Respondent">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="isProperty">
+          <label class="form-check-label" for="isProperty">Property Address</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="Rush">
+          <label class="form-check-label" for="Rush">Rush Service</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="PayableNS">
+          <label class="form-check-label" for="PayableNS">Payable NS</label>
+        </div>
+        <button type="submit" class="btn btn-block btn-dark mt-3">Submit</button>
+      </form>
+
+    </div> <!-- close container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

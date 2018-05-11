@@ -1,0 +1,13 @@
+body {
+  background: rgba(99, 172, 97, 0.75);
+}
+
+h1 {
+  margin: 80px 0 30px 0;
+  text-align: center;
+}
+
+#dataEntry {
+  width: 800px;
+  margin: auto;
+}
